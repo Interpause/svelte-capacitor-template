@@ -1,0 +1,36 @@
+{
+  "name": "svelte-capacitor-template",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Svelte + Capacitor with Typescript!",
+  "author": "John-Henry Lim <hyphen@interpause.dev> (https://interpause.dev/)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "prod": "vite build && cap sync",
+    "serve": "run-s build && vite preview",
+    "gen-res": "cordova-res android --resources ./src/assets/res --skip-config --fit contain --copy",
+    "android": "run-s prod gen-res && cap run android",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^3.2.0",
+    "@rollup/plugin-strip": "^2.1.0",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.19",
+    "@tsconfig/svelte": "^2.0.1",
+    "cordova-res": "^0.15.3",
+    "npm-run-all": "^4.1.5",
+    "rollup-plugin-visualizer": "^5.5.2",
+    "svelte": "^3.42.4",
+    "svelte-check": "^2.2.5",
+    "svelte-preprocess": "^4.8.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.2",
+    "vite": "^2.5.1"
+  },
+  "dependencies": {
+    "@capacitor/android": "^3.2.0",
+    "@capacitor/core": "^3.2.0"
+  }
+}

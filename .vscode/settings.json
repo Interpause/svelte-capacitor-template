@@ -1,0 +1,17 @@
+{
+	"editor.formatOnSave": true,
+	"files.autoSave": "onFocusChange",
+
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[markdown]": {
+		"editor.formatOnSave": false,
+	},
+}
